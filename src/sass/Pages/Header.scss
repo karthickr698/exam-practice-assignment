@@ -1,0 +1,87 @@
+@use '../abstracts/colors.scss';
+@use '../abstracts/pad_and_margin.scss' as a;
+
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    @include a.container;
+    align-items: center;
+    padding-top: a.$padding2;
+    padding-bottom: a.$padding2;
+    background-color: colors.$white;
+
+    img{
+        width: 25px;
+    }
+    .loginmain{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        button{
+            border: 1px solid colors.$black;
+            outline: none;
+            padding: a.$padding1X a.$padding2X;
+            border-radius: 3px;
+            cursor: pointer;
+            background-color: colors.$white;
+            &:hover{
+                border-color: colors.$gray-600;
+            }
+        }
+    }
+    $breakpoint-tablet: 968px;
+    @media (max-width: $breakpoint-tablet) {
+        .loginmain{
+            display: none;
+        }
+        .mobile{
+            display: block !important;
+            cursor: pointer;
+        }
+        .tab{
+            display: none !important;
+        }
+    }
+    .mobile{
+        display: none;
+    }
+    .tab{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        text-transform: uppercase;
+        font-family: monospace;
+        .active {
+            color: colors.$black;
+            text-decoration: none;
+        }
+    }
+}
+.non_active{
+    display: none;
+}
+
+.mobile_tab{
+    text-align: center;
+    div{
+        padding-top: a.$padding2X;
+        border-bottom: 1px solid colors.$gray-500;
+        padding-bottom: a.$padding2X;
+    }
+}
+a{
+    color: colors.$black;
+    text-decoration: none;
+}
+.menu_active{
+    position: fixed;
+    width: 60%;
+    background-color: colors.$white;
+    border: 1px solid colors.$gray-500;
+    box-shadow: 1px 0px 7px 60pc rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-out;
+}

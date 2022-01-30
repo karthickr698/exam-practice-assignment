@@ -1,0 +1,58 @@
+@mixin container {
+    padding: 10px 100px;
+    $breakpoint-tablet: 768px;
+    @media (max-width: $breakpoint-tablet) {
+            padding: 20px 50px;
+    }
+}
+
+// padding rem
+
+$padding1: 1rem;
+$padding2: 2rem;
+$padding3: 3rem;
+$padding4: 4rem;
+$padding5: 5rem;
+$padding6: 6rem;
+$padding7: 7rem;
+$padding8: 8rem;
+$padding9: 9rem;
+
+// padding px
+
+$padding1X:5px;
+$padding2X:10px;
+$padding3X:15px;
+$padding4X:20px;
+$padding5X:25px;
+$padding6X:30px;
+$padding7X:35px;
+$padding8X:40px;
+$padding9X:45px;
+$padding10X:50px;
+
+
+// margin rem
+
+$margin1: 1rem;
+$margin2: 2rem;
+$margin3: 3rem;
+$margin4: 4rem;
+$margin5: 5rem;
+$margin6: 6rem;
+$margin7: 7rem;
+$margin8: 8rem;
+$margin9: 9rem;
+
+// margin px
+
+$margin1X:5px;
+$margin2X:10px;
+$margin3X:15px;
+$margin4X:20px;
+$margin5X:25px;
+$margin6X:30px;
+$margin7X:35px;
+$margin8X:40px;
+$margin9X:45px;
+$margin10X:50px;

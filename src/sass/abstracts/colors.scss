@@ -1,0 +1,109 @@
+// Shades of grey
+$white:    #ffffff;
+$gray-100: #f3f7fa;
+$gray-200: #f5f8fb;
+$gray-300: #F0F3F6;
+$gray-400: #eaedf2;
+$gray-500: #d1d7e0;
+$gray-600: #93a5be;   
+$gray-700: #66799e;   
+$gray-800: #506690;   
+$gray-900: #4A5073;
+$dark    : #262B40; 
+$black   : #2e3650;
+
+// fusv-disable
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+
+// Generic colors
+$blue:    #0948B3;
+$indigo:  #4c5680;
+$purple:  #8965e0;
+$pink:    #C96480;
+$red:     #FA5252;
+$orange:  #FF9F89;
+$brown:   #b9a084;
+$yellow:  #f5b759;
+$yellow-alt:#fde9ca;
+$green:   #05A677;
+$teal:    #1E90FF;
+$cyan:    #63b1bd;
+$soft-indigo:#f5e8ff;
+$soft-green: #2CA58D;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+// Color scheme
+$default:       #262B40;
+$primary:       #262B40;
+$secondary:     #61DAFB;
+$tertiary:      #1B998B;
+$quaternary:    #C96480;
+
+// Series names and colors. This can be extended or customized as desired. Just add more series and colors.
+$ct-series-names: (a, b, c, d, e, f, g) !default;
+$ct-series-colors: (
+  #1B998B,
+  #17a5ce,
+  #262B40,
+  #f5b759,
+  #C96480,
+  #ffffff,
+  #17a5ce,
+
+);
+
+// Mobile landing color scheme
+$primary-app:     #EBF4F6;
+$secondary-app:   #424AA0;
+
+$success:       $green;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$gray:          $gray-900;
+$light:         $gray-400;
+$lighten:       $gray-300;
+$soft:          $gray-200;
+$dark:          $dark;
+
+// Brands colors
+$facebook:      #3b5999;
+$twitter:       #1da1f2;
+$google:        #DB4337;
+$instagram:     #e4405f;
+$pinterest:     #bd081c;
+$youtube:       #cd201f;
+$slack:         #3aaf85;
+$dribbble:      #ea4c89;
+$github:        #222222;
+$dropbox:       #1E90FF;
+$twitch:        #4B367C;
+$paypal:        #ecb32c;
+$behance:       #0057ff;
+$reddit:        #E84422;

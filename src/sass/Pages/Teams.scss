@@ -1,0 +1,54 @@
+@use '../abstracts/colors.scss';
+@use '../abstracts/pad_and_margin.scss' as a;
+@use '../abstracts/fonts.scss' as font;
+
+
+.teams_main{
+    @include a.container;
+    text-align: center;
+    font-size: font.$fontsize9;
+    margin-top: a.$margin2;
+    font-family: sans-serif;
+    h3{
+        margin-top: a.$margin4;
+    }
+    .card_main{
+        display: flex;
+        justify-content: center;
+        gap: a.$padding4;
+        flex-wrap: wrap;
+        margin-top: a.$margin3;
+        .card{
+            width: 160px;
+            box-shadow: 1px 1px 30px colors.$gray-500;
+            background-color: colors.$white;
+            padding-bottom: a.$padding1;
+            .card_img img{
+                width: 160px;
+            }
+            .title{
+                margin-top: a.$margin3X;
+            }
+            .sub_title{
+                font-size: font.$fontsize3;
+                color: colors.$black;
+            }
+            .logos{
+                margin-top: a.$margin2X;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                img{
+                    width: 18px;
+                }
+            }
+            $breakpoint-tablet: 768px;
+            @media (max-width: $breakpoint-tablet) {
+                width: 200px;
+                .card_img img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
