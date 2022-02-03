@@ -15,16 +15,16 @@
     .card_main{
         display: flex;
         justify-content: center;
-        gap: a.$padding4;
+        gap: a.$padding2;
         flex-wrap: wrap;
         margin-top: a.$margin3;
         .card{
-            width: 160px;
+            width: 190px;
             box-shadow: 1px 1px 30px colors.$gray-500;
             background-color: colors.$white;
             padding-bottom: a.$padding1;
             .card_img img{
-                width: 160px;
+                width: 190px;
             }
             .title{
                 margin-top: a.$margin3X;
@@ -39,7 +39,8 @@
                 gap: 10px;
                 justify-content: center;
                 img{
-                    width: 18px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
             $breakpoint-tablet: 768px;

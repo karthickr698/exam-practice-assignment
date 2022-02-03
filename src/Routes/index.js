@@ -10,7 +10,7 @@ const Routers = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <Dashboard />
+        <Stor />
       </Route>
       <Route exact path="/team">
         <Team />
